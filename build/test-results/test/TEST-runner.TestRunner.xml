@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="AMAC02RWNJ9FVH3" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Funcionalidade: Realizar operações matematicas
+  Eu como usuário quero realizar quato tipos de operações matemáticas somar,subtrair,divisão e multiplicação
+
+  Cenário: Somar dois numeros positivos ?[90m# src/test/resources/features/calculator.feature:8?[0m
+    ?[31mDado ?[0m?[31mque insiro os dois numeros?[0m     ?[90m# CalculatorSteps.que_insiro_os_dois_numeros()?[0m
+      ?[31mjava.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:9)
+?[0m
+    ?[36mQuando ?[0m?[36mtocar no sum?[0m                 ?[90m# CalculatorSteps.tocar_no_sum()?[0m
+    ?[36mEntão ?[0m?[36mdevo ver o resultado da soma?[0m  ?[90m# CalculatorSteps.devo_ver_o_resultado_da_soma()?[0m
+
+  Cenário: Subtrair dois numeros positivos  ?[90m# src/test/resources/features/calculator.feature:13?[0m
+    ?[31mDado ?[0m?[31mque insiro os dois numeros?[0m         ?[90m# CalculatorSteps.que_insiro_os_dois_numeros()?[0m
+      ?[31mjava.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:14)
+?[0m
+    ?[36mQuando ?[0m?[36mtocar no subtract?[0m                ?[90m# CalculatorSteps.tocar_no_subtract()?[0m
+    ?[36mEntão ?[0m?[36mdevo ver o resultado da subtração?[0m ?[90m# CalculatorSteps.devo_ver_o_resultado_da_subtração()?[0m
+
+  Cenário: Dividir dois numeros positivos ?[90m# src/test/resources/features/calculator.feature:18?[0m
+    ?[31mDado ?[0m?[31mque insiro os dois numeros?[0m       ?[90m# CalculatorSteps.que_insiro_os_dois_numeros()?[0m
+      ?[31mjava.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:19)
+?[0m
+    ?[36mQuando ?[0m?[36mtocar no divide?[0m                ?[90m# CalculatorSteps.tocar_no_divide()?[0m
+    ?[36mEntão ?[0m?[36mdevo ver o resultado da divisão?[0m ?[90m# CalculatorSteps.devo_ver_o_resultado_da_divisão()?[0m
+
+  Cenário: Multiplicar dois numeros positivos   ?[90m# src/test/resources/features/calculator.feature:23?[0m
+    ?[31mDado ?[0m?[31mque insiro os dois numeros?[0m             ?[90m# CalculatorSteps.que_insiro_os_dois_numeros()?[0m
+      ?[31mjava.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:24)
+?[0m
+    ?[36mQuando ?[0m?[36mtocar no multiply?[0m                    ?[90m# CalculatorSteps.tocar_no_multiply()?[0m
+    ?[36mEntão ?[0m?[36mdevo ver o resultado da multiplicação?[0m ?[90m# CalculatorSteps.devo_ver_o_resultado_da_multiplicação()?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/calculator.feature:8 ?[0m# Somar dois numeros positivos
+?[31msrc/test/resources/features/calculator.feature:13 ?[0m# Subtrair dois numeros positivos
+?[31msrc/test/resources/features/calculator.feature:18 ?[0m# Dividir dois numeros positivos
+?[31msrc/test/resources/features/calculator.feature:23 ?[0m# Multiplicar dois numeros positivos
+
+4 Scenarios (?[31m4 failed?[0m)
+12 Steps (?[31m4 failed?[0m, ?[36m8 skipped?[0m)
+0m0,222s
+
+java.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:9)
+
+java.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:14)
+
+java.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:19)
+
+java.lang.NullPointerException
+	at helper.AppiumDriverHelper.createDriver(AppiumDriverHelper.java:20)
+	at stepDefinition.CalculatorSteps.que_insiro_os_dois_numeros(CalculatorSteps.java:19)
+	at ✽.que insiro os dois numeros(src/test/resources/features/calculator.feature:24)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
