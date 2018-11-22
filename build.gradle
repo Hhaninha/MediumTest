@@ -1,0 +1,67 @@
+group 'Medium'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
+
+
+test{
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+task runScenarioAndroid() {
+    dependsOn assemble, compileTestJava
+
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin', 'pretty',
+                    '--plugin','html:target/html',
+                    '--monochrome',
+                    '--name', System.getProperty("scenario"),
+                    '--glue', 'stepDefinition',
+                    'src/test/resources/features/' + System.getProperty('feature') + '.feature']
+            systemProperty "environment", "android"
+        }
+    }
+}
+
+
+task runScenarioiOS() {
+    dependsOn assemble, compileTestJava
+
+    doLast {
+        javaexec {
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = ['--plugin', 'pretty',
+                    '--plugin','html:target/html',
+                    '--monochrome',
+                    '--name', System.getProperty("scenario"),
+                    '--glue', 'stepDefinition',
+                    'src/test/resources/features/' + System.getProperty('feature') + '.feature']
+            systemProperty "environment", "ios"
+        }
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'io.cucumber', name: 'cucumber-junit', version: '4.2.0'
+    compile group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
+    compile group: 'io.appium', name: 'java-client', version: '6.1.0'
+}
